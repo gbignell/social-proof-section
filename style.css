@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
 /* Box sizing rules */
 *,
 *::before,
@@ -35,6 +37,12 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1em;
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,4 +79,145 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  height: 100%;
+  width: 69rem;
+  /* border: 2px solid green; */
+  /* padding: 5rem; */
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  color: hsl(300, 43%, 22%);
+  padding: 0 8rem 2rem 0;
+}
+
+p {
+  color: hsl(303, 10%, 53%);
+}
+
+.one {
+  display: flex;
+  gap: 6rem;
+  /* border: 2px solid red; */
+  /* max-width: auto; */
+  margin-bottom: 2rem;
+}
+
+.text {
+  flex: 1;
+  /* border: 2px solid yellow; */
+  max-width: 35%;
+}
+
+.ratings-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 700;
+  /* border: 2px solid blue; */
+}
+
+.rating {
+  padding: 1rem 2rem;
+  text-align: center;
+  color: hsl(300, 43%, 22%);
+}
+
+.rate-container {
+  display: flex;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  padding: 0 2rem 0 2rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 27rem;
+}
+
+.rating1 {
+  align-self: flex-start;
+}
+
+.rating2 {
+  align-self: center;
+}
+
+.rating3 {
+  align-self: flex-end;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+  /* border: 2px solid pink; */
+}
+.card {
+  max-width: 21.7rem;
+  max-height: 16rem;
+  padding: 2.5rem 2rem;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 0.5rem;
+}
+
+.card-head {
+  display: flex;
+  gap: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.card-head img {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.card-2 {
+  margin-top: 1.7rem;
+}
+
+.card-3 {
+  margin-top: 3.2rem;
+}
+
+.card h3 {
+  color: hsl(333, 80%, 67%);
+}
+
+.card h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.card p {
+  color: hsl(0, 0%, 100%);
+}
+
+.top {
+  position: absolute;
+  right: 50%;
+  bottom: 40%;
+  z-index: -1;
+  width: 60%;
+}
+.bottom {
+  position: fixed;
+  left: 0;
+  top: 9%;
+  z-index: -1;
+  width: 100%;
+}
+
+.ratings-container picture {
+  background: url("images/icon-star.svg");
+  width: 100px;
+  height: 1rem;
+  background-repeat: space;
 }
