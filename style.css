@@ -87,7 +87,7 @@ main {
   gap: 2rem;
   margin-bottom: 2rem;
   height: 100%;
-  width: 69rem;
+  max-width: 69rem;
   /* border: 2px solid green; */
   /* padding: 5rem; */
 }
@@ -142,7 +142,7 @@ p {
   padding: 0 2rem 0 2rem;
   border-radius: 0.5rem;
   height: 3rem;
-  width: 27rem;
+  max-width: 27rem;
 }
 
 .rating1 {
@@ -206,19 +206,22 @@ p {
   right: 50%;
   bottom: 40%;
   z-index: -1;
-  width: 60%;
+  max-width: 60%;
 }
 .bottom {
   position: fixed;
   left: 0;
   top: 9%;
   z-index: -1;
-  width: 100%;
+  max-width: 100%;
 }
 
 .ratings-container picture {
   background: url("images/icon-star.svg");
-  width: 100px;
+  max-width: 100px;
   height: 1rem;
   background-repeat: space;
+}
+
+@media screen and (max-width: 600px) {
 }
