@@ -87,7 +87,7 @@ main {
   gap: 2rem;
   margin-bottom: 2rem;
   height: 100%;
-  width: 69rem;
+  max-width: 69rem;
   /* border: 2px solid green; */
   /* padding: 5rem; */
 }
@@ -125,6 +125,7 @@ p {
   justify-content: center;
   gap: 1rem;
   font-weight: 700;
+  margin-left: 7rem;
   /* border: 2px solid blue; */
 }
 
@@ -140,8 +141,8 @@ p {
   background-color: hsl(300, 24%, 96%);
   padding: 0 2rem 0 2rem;
   border-radius: 0.5rem;
-  height: 3rem;
-  width: 27rem;
+  max-height: 3rem;
+  max-width: 27rem;
 }
 
 .rating1 {
@@ -220,4 +221,73 @@ p {
   width: 100px;
   height: 1rem;
   background-repeat: space;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    max-width: 100%;
+  }
+
+  .one {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ratings-container {
+    flex-direction: column;
+    margin: -2.5rem 2rem 0 2rem;
+    max-width: 100%;
+  }
+
+  .rate-container {
+    min-height: 5rem;
+    padding: 1rem;
+  }
+
+  .text {
+    margin-top: 5rem;
+    max-width: 62%;
+    align-items: center;
+  }
+
+  .text p {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 0;
+  }
+
+  .rating1,
+  .rating2,
+  .rating3 {
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card,
+  .card-2,
+  .card-3 {
+    margin: 0;
+  }
+
+  .top {
+    left: 20%;
+    bottom: 65%;
+    width: 100%;
+  }
+  .bottom {
+    left: 0;
+    top: 65%;
+    width: 100%;
+  }
 }
